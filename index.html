@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid w-75">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакти</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Каталог
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Telephone</a></li>
+                                <li><a class="dropdown-item" href="#">Tablet</a></li>
+                                <li><a class="dropdown-item" href="#">Powerbank</a></li>
+                                <li><a class="dropdown-item" href="#">Charger</a></li>
+                                <li><a class="dropdown-item" href="#">Phone case</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" disabled data-bs-toggle="button"
+                            type="submit">Search</button>
+                    </form>
+                </div>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="btn w-20 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign up
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <form class="row g-3 roww">
+                                <div class="col-md-4">
+                                    <label for="validationDefault01" class="text-white form-label">First
+                                        name</label>
+                                    <input type="text" class="form-control text-dark-emphasis"
+                                        id="validationDefault01" value="Your name" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="validationDefault02" class="text-white form-label">Last name</label>
+                                    <input type="text" class="text-dark-emphasis form-control"
+                                        id="validationDefault02" value="Your first name" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="validationDefaultUsername"
+                                        class="text-white form-label">Username</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text text-white" id="inputGroupPrepend2">@</span>
+                                        <input type="text" class="text-white form-control"
+                                            id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationDefault03" class="text-white form-label">City</label>
+                                    <input type="text" class="text-white form-control" id="validationDefault03"
+                                        required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="text-white" for="start">Your birthday</label>
+                                    <input type="date" id="start" name="trip-start" value="2018-07-22"
+                                        min="2000-01-01" max="1918-12-31" />
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="validationDefault05" class="text-white form-label">Zip</label>
+                                    <input type="text" class="form-control" id="validationDefault05" required>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                            required>
+                                        <label class="text-white form-check-label" for="invalidCheck2">
+                                            Agree to terms and conditions
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit button"
+                                        data-bs-dismiss="modal">Sign up</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide pt-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="photos/52284772791232.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="photos/56009418830784.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="photos/90219875447189.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+            <div class="container mt-5 bg-body-tertiary pt-5">
+                <div class="justify-content-center">
+               <h3 class=" justify-content-center d-flex">Новинки</h3>
+                </div>
+                <div class="row g-5">
+                    <div class="col-3">
+                        <div class="p-3">
+                            <div class="card" style="width: 15rem;">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> 
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/photos/25685459685011_small4.jpeg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/photos/36517167232102.jpeg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/photos/70494710056853.jpeg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Захисний чохол Silicone Case для Samsung Galaxy S24</h5>
+                                  <a class="text-decor text-dark">1400грн</a>
+                                    <a href="#" class="btn btn-primary">BUY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="p-3">
+                            <div class="card" style="width: 15rem;">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/photos//vneshniy-akkumulyator-hoco-q21-22.5wpd20w-10000mah-50998007749210_small4.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/photos/63446511413357.jpeg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/photos/48201611877426_small6.jpeg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Зовнішній акумулятор Trust Primo ECO</h5>
+                                    <a class="text-decor text-dark">1400грн</a>
+                                    <a href="#" class="btn btn-primary">BUY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="p-3">
+                            <div class="card" style="width: 15rem;">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/photos/89222676634758_small4.jpeg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/photos/44741703046251.jpeg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/photos/19067234213362.jpeg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Бездротовий зарядний пристрій Hoco CW41</h5>
+                                    <a class="text-decor text-dark">1400грн</a>
+                                  <a href="#" class="btn btn-primary">BUY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3">
+                        <div class="p-3">
+                            <div class="card" style="width: 15rem;">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/photos/setevoe-zaryadnoe-ustroystvo-samsung-15w-power-adapter-kabel-type-c-to-type-c-ep-t1510xwegru-77159396094816.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/photos/setevoe-zaryadnoe-ustroystvo-samsung-15w-power-adapter-kabel-type-c-to-type-c-ep-t1510xwegru-84238454007179.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/photos/setevoe-zaryadnoe-ustroystvo-samsung-15w-power-adapter-kabel-type-c-to-type-c-ep-t1510xwegru-89846307089053.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Мережевий зарядний пристрій Samsung 15W </h5>
+                                    <a class="text-decor text-dark">1400грн</a>
+                                   <a href="#" class="btn btn-primary">BUY</a>
+                                </div>
+                            </div>
+                            <div role="alert" aria-live="assertive" aria-atomic="true"
+                            class="bottom-0 end-0  toast fade show" data-bs-autohide="false">
+                            <div class="toast-header">
+                                <option value="bottom-0 end-0 fixed-bottom"></option>
+                                <svg class="bd-placeholder-img rounded me-2" width="20" height="20"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <rect width="100%" height="100%" fill="#00700"></rect>
+                                </svg>
+                                <strong class="me-auto">CHATBOT</strong>
+                                <small>now</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                Привіт!! Я тут щоб допомогти.
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footer-container">
+                            <div class="footer-section">
+                                <h3>About Us</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="footer-section">
+                                <h3>Quick Links</h3>
+                                <ul class="smth">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h3>Contact Us</h3>
+                                <p>03049, Україна, м. Київ, вул. Богданівська, 3</p>
+                                <p>Email: ukrtransbuild@gmail.com</p>
+                                <p>Phone: +380 44 248 89 25</p>
+                                <p>Phone: +380 44 248 89 23</p>
+                
+                            </div>
+                        </div>
+                    </footer>
+    </main>
+</body>
+
+</html>
